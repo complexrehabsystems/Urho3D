@@ -1247,7 +1247,7 @@ bool Image::SaveBMP(const String& fileName) const
         return false;
 }
 
-unsigned char* Image::SavePNG(int *len) const
+unsigned char* Image::SavePNGAsChar(int *len) const
 {
     URHO3D_PROFILE(SaveImagePNG);
     if (IsCompressed())
