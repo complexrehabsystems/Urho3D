@@ -226,8 +226,9 @@ static void RegisterImage(asIScriptEngine* engine)
     engine->RegisterObjectMethod("Image", "void Clear(const Color&in)", asMETHOD(Image, Clear), asCALL_THISCALL);
     engine->RegisterObjectMethod("Image", "void ClearInt(uint)", asMETHOD(Image, ClearInt), asCALL_THISCALL);
     engine->RegisterObjectMethod("Image", "bool SaveBMP(const String&in) const", asMETHOD(Image, SaveBMP), asCALL_THISCALL);
-    engine->RegisterObjectMethod("Image", "bool SavePNG(const String&in) const", asMETHOD(Image, SavePNG), asCALL_THISCALL);
-    engine->RegisterObjectMethod("Image", "bool SaveTGA(const String&in) const", asMETHOD(Image, SaveTGA), asCALL_THISCALL);
+	engine->RegisterObjectMethod("Image", "bool SavePNG(const String&in) const", asMETHOD(Image, SavePNG), asCALL_THISCALL);
+	engine->RegisterObjectMethod("Image", "unsigned char@+ SavePNGAsChar(int@+ len) const", asMETHOD(Image, SavePNGAsChar), asCALL_THISCALL);
+	engine->RegisterObjectMethod("Image", "bool SaveTGA(const String&in) const", asMETHOD(Image, SaveTGA), asCALL_THISCALL);
     engine->RegisterObjectMethod("Image", "bool SaveJPG(const String&in, int) const", asMETHOD(Image, SaveJPG), asCALL_THISCALL);
     engine->RegisterObjectMethod("Image", "bool SaveDDS(const String&in) const", asMETHOD(Image, SaveDDS), asCALL_THISCALL);
     engine->RegisterObjectMethod("Image", "bool SaveWEBP(const String&in, float compression = 0.0f) const", asMETHOD(Image, SaveWEBP), asCALL_THISCALL);

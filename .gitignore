@@ -102,3 +102,17 @@ configure*
 *.bak
 Thumbs.db
 .directory
+
+.vs/*
+**/*.vcxproj
+**/*.filters
+**/*.sln
+**/*.tlog
+**/*.pdb
+**/*.obj
+**/*.exp
+**/*.lib
+**/*.pch
+
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
